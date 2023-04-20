@@ -57,7 +57,9 @@
         });
     });
     
-    
+    var date = new Date();
+    var currDate = "" + ((date.getMonth() + 1) < 10 ? ("0" + (date.getMonth() + 1)) : (date.getMonth() + 1)) + "/" + date.getFullYear();
+    $('#present-date').html(currDate);
     
     // Parallaxmouse js
     
@@ -79,7 +81,14 @@
             $(el).css('width',percent+'%');
         },{accY: 0});
     }
-    
+
+    if($('.ver-progress-line').length){
+        $('.ver-progress-line').appear(function(){
+            var el = $(this);
+            var percent = el.data('height');
+            $(el).css('height',percent+'%');
+        },{accY: 0});
+    }
     
     //===== Counter Up
     
