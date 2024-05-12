@@ -940,100 +940,55 @@ text-align: center; }
 /*===========================
         5.WORK css 
 ===========================*/
-
 .timeline {
-  width: 80%;
-  height: auto;
-  max-width: 800px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-}
-
-.timeline-date-left {
-  text-align: end;
-  margin-right: 20px;
-}
-.timeline-date-right {
-  text-align: left;
-  margin-left: 20px;
-}
-
-/* .timeline-content {
-  padding: 15px;
+  border: 1px solid #000;
+  border-radius: 10px;
   background: #dddccc;
-  box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
-  border-radius: 6px;
-  transition: 0.4s ease;
-  overflow-wrap: break-word !important;
-} */
-
-.timeline-content-left {
-  text-align: end;
-}
-
-.timeline-content-right ul
-{
-  color: #dddccc;
-  /* margin-left: 20px; */
-}
-
-.timeline-content-left ul
-{
-  color: #dddccc;
-  /* margin-right: 20px; */
-}
-
-
-.timeline-component {
-  margin: 0px 20px 20px 20px;
-}
-
-.timeline-component p {
-  font-weight: bold;
-}
-
-@media screen and (min-width: 768px) {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-bottom: 2rem; 
+} 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .timeline {
-    display: grid;
-    grid-template-columns: 1fr 3px 1fr;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background: #dddccc;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-bottom: 2rem; 
+  } 
   }
-  .timeline-middle {
-    position: relative;
-    /* background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387); */
-    background-color: #d9d9d9;
-    width: 2px;
-    height: 100%;
+@media (max-width: 767px) {
+  .timeline {
+    border: 1px solid #000;
+    border-radius: 10px;
+    background: #dddccc;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-bottom: 1.5rem; 
+  } 
   }
-  
-  .timeline-middle .ver-progress-line{
-    position: relative;
-    /* background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387); */
-    background-color: #ffc800;
-    width: 2px;
-    height: 0;
-    -webkit-transition: all 2s ease-out 0s;
-    -moz-transition: all 2s ease-out 0s;
-    -ms-transition: all 2s ease-out 0s;
-    -o-transition: all 2s ease-out 0s;
-    transition: all 2s ease-out 0s;
-  }
-  .main-middle {
-    opacity: 0;
-  }
-  .timeline-circle {
-    position: relative;
-    top: 0;
-    left: 50%;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    /* background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387); */
-    background-color: #fff;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-  }
+
+.timeline-head {
+  color: #8a8fa3;
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
 }
+.timeline-head-bold {
+  font-weight: 600;
+  color: #d0af51;
+}
+
+.timeline-body {
+  color: #1a1a1a;
+}
+
 
 
 
