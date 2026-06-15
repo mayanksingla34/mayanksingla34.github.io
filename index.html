@@ -2,951 +2,601 @@
 <html lang="en">
 
 <head>
-
-    <!--====== Required meta tags ======-->
     <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Mayank Singla — Software Developer & Full-Stack Engineer specializing in scalable backends, CRM integrations, and ethical hacking.">
+    <meta name="author" content="Mayank Singla">
 
-    <!--====== Title ======-->
+    <!-- Open Graph -->
+    <meta property="og:title" content="Mayank Singla — Software Developer">
+    <meta property="og:description"
+        content="Full-Stack Engineer • Web Developer • Ethical Hacker. Building scalable systems and secure software.">
+    <meta property="og:type" content="website">
+
     <title>Mayank Singla</title>
 
-    <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="assets/images/m3.png" type="image/png">
 
-    <!--====== Bootstrap css ======-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
-    <!--====== Line Icons css ======-->
-    <link rel="stylesheet" href="assets/css/LineIcons.css">
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
 
-    <!--====== Magnific Popup css ======-->
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-
-    <!--====== Default css ======-->
-    <link rel="stylesheet" href="assets/css/default.css">
-
-    <!--====== Style css ======-->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/portfolio.css">
 </head>
 
 <body>
 
-    <!--====== PRELOADER PART START ======-->
-
-    <div class="preloader">
-        <div class="loader_34">
-            <div class="ytp-spinner">
-                <div class="ytp-spinner-container">
-                    <div class="ytp-spinner-rotator">
-                        <div class="ytp-spinner-left">
-                            <div class="ytp-spinner-circle"></div>
-                        </div>
-                        <div class="ytp-spinner-right">
-                            <div class="ytp-spinner-circle"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- ============ PRELOADER ============ -->
+    <div class="preloader" id="preloader" aria-hidden="true">
+        <div class="preloader__ring">
+            <img class="preloader__mark" src="assets/images/m3.png" alt="Mayank Singla logo">
         </div>
     </div>
 
-    <!--====== PRELOADER ENDS START ======-->
+    <!-- ============ CURSOR GLOW ============ -->
+    <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
 
-    <!--====== HEADER PART START ======-->
+    <!-- ============ SCROLL PROGRESS ============ -->
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
-    <header id="home" class="header-area">
-        <div class="navigation fixed-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <nav class="navbar navbar-expand-lg">
-                            <a class="navbar-brand" href="https://mayanksingla34.github.io/">
-                                <!-- <h4 style="color:#ffc800;"><font face="Edwardian Script ITC" size="6.5">Mayank Singla</font></h4> -->
-                                <h4 style="color:#ffc800;">Mayank Singla</h4>
+    <!-- ============ NAV ============ -->
+    <header class="nav" id="nav">
+        <div class="container nav__inner">
+            <a href="#home" class="nav__brand" data-magnetic>
+                <img class="nav__brand-mark" src="assets/images/m3.png" alt="Mayank Singla logo">
+                <span class="nav__brand-name">Mayank Singla</span>
+            </a>
 
-                            </a> <!-- Logo -->
-                            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="toggler-icon"></span>
-                                <span class="toggler-icon"></span>
-                                <span class="toggler-icon"></span>
-                            </button>
+            <nav class="nav__links" id="navLinks" aria-label="Primary">
+                <a href="#home" class="nav__link is-active">Home</a>
+                <a href="#about" class="nav__link">About</a>
+                <a href="#education" class="nav__link">Education</a>
+                <a href="#experience" class="nav__link">Experience</a>
+                <a href="#projects" class="nav__link">Projects</a>
+                <a href="#skills" class="nav__link">Skills</a>
+                <a href="#contact" class="nav__link">Contact</a>
+            </nav>
 
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav ml-auto">
-                                    <li class="nav-item active"><a class="page-scroll" href="#home">Home</a></li>
-                                    <li class="nav-item"><a class="page-scroll" href="#about">About</a></li>
-                                    <li class="nav-item"><a class="page-scroll" href="#education">Education</a></li>
-                                    <li class="nav-item"><a class="page-scroll" href="#work">Portfolio</a></li>
-                                    <li class="nav-item"><a class="page-scroll" href="#skills">Skills</a></li>
-                                    <li class="nav-item"><a class="page-scroll" href="#contact">Contact</a></li>
-                                </ul>
-                            </div> <!-- navbar collapse -->
-                        </nav> <!-- navbar -->
-                    </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div> <!-- navigation -->
+            <a href="assets/Files/Mayank Singla Resume.pdf" target="_blank" rel="noopener"
+                class="btn btn--ghost nav__cv" data-magnetic>
+                <i data-lucide="download"></i><span>Resume</span>
+            </a>
 
-        <div id="parallax" class="header-content d-flex align-items-center">
-            <div class="header-shape shape-one layer" data-depth="0.10">
-                <img src="assets/images/banner/shape/shape-1.png" alt="Shape">
-            </div> <!-- header shape -->
-            <div class="header-shape shape-tow layer" data-depth="0.30">
-                <img src="assets/images/banner/shape/shape-2.png" alt="Shape">
-            </div> <!-- header shape -->
-            <div class="header-shape shape-three layer" data-depth="0.40">
-                <img src="assets/images/banner/shape/shape-3.png" alt="Shape">
-            </div> <!-- header shape -->
-            <div class="header-shape shape-fore layer" data-depth="0.60">
-                <img src="assets/images/banner/shape/shape-2.png" alt="Shape">
-            </div> <!-- header shape -->
-            <div class="header-shape shape-five layer" data-depth="0.20">
-                <img src="assets/images/banner/shape/shape-1.png" alt="Shape">
-            </div> <!-- header shape -->
-            <div class="header-shape shape-eight layer" data-depth="0.40">
-                <img src="assets/images/banner/shape/shape-3.png" alt="Shape">
-            </div> <!-- header shape -->
-            <div class="header-shape shape-nine layer" data-depth="0.20">
-                <img src="assets/images/banner/shape/shape-6.png" alt="Shape">
-            </div> <!-- header shape -->
-            <div class="header-shape shape-ten layer" data-depth="0.30">
-                <img src="assets/images/banner/shape/shape-3.png" alt="Shape">
-            </div> <!-- header shape -->
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-12">
-                        <div class="header-content-right">
-                            <h4 class="sub-title">Hello, I’m</h4>
-                            <h1 class="title" style="color:#ffffff;">Mayank Singla</h1>
-                            <p>Software Developer | Web Developer | Ethical Hacker</p>
-                            <a class="main-btn" href="assets/Files/Mayank Singla Resume.pdf" target="_blank">Download
-                                CV</a>
-                        </div> <!-- header content right -->
-                    </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-            <div class="header-social">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="header-social-icon">
-                                <ul>
-                                    <li><a href="https://www.linkedin.com/in/mayanksingla34/" target="_blank"><i
-                                                class="lni-linkedin-original"></i></a></li>
-                                    <li><a href="https://github.com/mayanksingla34" target="_blank"><i
-                                                class="lni-github-original"></i></a></li>
-                                    <li><a href="https://www.facebook.com/mayanksingla34/" target="_blank"><i
-                                                class="lni-facebook-filled"></i></a></li>
-                                    <li><a href="https://www.instagram.com/mayanksingla34/" target="_blank"><i
-                                                class="lni-instagram-filled"></i></a></li>
-                                    <li><a href="https://twitter.com/mayanksingla34" target="_blank"><i
-                                                class="lni-twitter-original"></i></a></li>
-                                    <li><a href="https://join.skype.com/invite/V9I3NgY5rS3O" target="_blank"><i
-                                                class="lni-skype"></i></a></li>
-                                </ul>
-                            </div> <!-- header social -->
-                        </div>
-                    </div> <!-- row -->
-                </div> <!-- container -->
-            </div> <!-- header social -->
-        </div> <!-- header content -->
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
     </header>
 
-    <!--====== HEADER PART ENDS ======-->
+    <main>
 
-    <!--====== ABOUT PART START ======-->
-
-    <section id="about" class="about-area gray-bg pt-125 pb-130">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title text-center">
-                        <h2 class="title">About Me</h2>
-                        <p>Software Developer | Web Developer | Ethical Hacker</p>
-                    </div> <!-- section title -->
+        <!-- ============ HERO ============ -->
+        <section id="home" class="hero">
+            <canvas class="hero__canvas" id="heroCanvas" aria-hidden="true"></canvas>
+            <div class="hero__glow" aria-hidden="true"></div>
+            <div class="container hero__inner">
+                <p class="hero__greeting reveal">
+                    <span class="hero__greeting-line"></span> Hello, I'm
+                </p>
+                <h1 class="hero__name reveal">Mayank <span class="text-gold">Singla</span></h1>
+                <h2 class="hero__role reveal">
+                    <span class="hero__role-static">I'm a </span>
+                    <span class="hero__role-rotator" id="roleRotator" aria-live="polite"></span>
+                </h2>
+                <p class="hero__tagline reveal">
+                    I build scalable, secure systems — from full-stack CRM platforms and
+                    payment engines to the offensive side of security.
+                </p>
+                <div class="hero__actions reveal">
+                    <a href="assets/Files/Mayank Singla Resume.pdf" target="_blank" rel="noopener"
+                        class="btn btn--gold" data-magnetic>
+                        <i data-lucide="download"></i><span>Download CV</span>
+                    </a>
+                    <a href="#contact" class="btn btn--ghost" data-magnetic>
+                        <i data-lucide="send"></i><span>Get in touch</span>
+                    </a>
                 </div>
-            </div> <!-- row -->
-            <div class="row">
-                <div class="col-lg-7" style="border-bottom: 1px solid #999fb3;">
-                    <div class="about-content mt-50">
-                        <h5 class="about-title">Hi There! I'm Mayank Singla</h5>
-                        <p>Graduate in B.E. Computer Engineering from Thapar Institute of Engineering and
-                            Technology,
-                            specializing in Web Development, Data Structures, Algorithms, Database Management, Computer
-                            Networks, Computer and Networks Security, Secure Coding, Cyber Forensics, and Ethical
-                            Hacking.<br>
-                            <!-- I possess strong logical and analytical skills, and I am highly motivated and dedicated to my work. With a good understanding of Data Structures and a decent academic track record, I am always looking for opportunities to improve myself while contributing to the growth of an organization.</p> -->
-                        <ul class="clearfix">
+                <ul class="hero__social reveal">
+                    <li><a href="https://www.linkedin.com/in/mayanksingla34/" target="_blank" rel="noopener"
+                            aria-label="LinkedIn"><span class="brand" data-brand="linkedin"></span></a></li>
+                    <li><a href="https://github.com/mayanksingla34" target="_blank" rel="noopener"
+                            aria-label="GitHub"><span class="brand" data-brand="github"></span></a></li>
+                    <li><a href="https://www.instagram.com/mayanksingla34/" target="_blank" rel="noopener"
+                            aria-label="Instagram"><span class="brand" data-brand="instagram"></span></a></li>
+                    <li><a href="https://twitter.com/mayanksingla34" target="_blank" rel="noopener"
+                            aria-label="Twitter / X"><span class="brand" data-brand="twitter"></span></a></li>
+                    <li><a href="https://www.facebook.com/mayanksingla34/" target="_blank" rel="noopener"
+                            aria-label="Facebook"><span class="brand" data-brand="facebook"></span></a></li>
+                </ul>
+            </div>
+            <a href="#about" class="hero__scroll" aria-label="Scroll to about">
+                <span class="hero__scroll-mouse"></span>
+                <span class="hero__scroll-text">Scroll</span>
+            </a>
+        </section>
+
+        <!-- ============ ABOUT ============ -->
+        <section id="about" class="section about">
+            <div class="container">
+                <div class="section__head reveal">
+                    <span class="section__eyebrow">01 — About</span>
+                    <h2 class="section__title">About <span class="text-gold">Me</span></h2>
+                </div>
+
+                <div class="about__grid">
+                    <div class="about__photo reveal">
+                        <div class="about__photo-frame" data-tilt>
+                            <img src="assets/images/Image2026.jpg" alt="Portrait of Mayank Singla" loading="lazy">
+                        </div>
+                    </div>
+
+                    <div class="about__body reveal">
+                        <h3 class="about__heading">Hi there! I'm Mayank — a Software Developer who likes shipping things that scale.</h3>
+                        <p>
+                            I hold a B.E. in Computer Engineering from
+                            <strong>Thapar Institute of Engineering &amp; Technology</strong>, with a foundation in
+                            Web Development, Data Structures &amp; Algorithms, Database Management, Computer Networks,
+                            Network Security, Secure Coding, Cyber Forensics, and Ethical Hacking.
+                        </p>
+                        <p>
+                            Today I work across the full stack — designing scalable backend architecture, building CRM
+                            and payment integrations, and leading delivery — while keeping a hacker's eye for how
+                            systems can break.
+                        </p>
+
+                        <ul class="about__facts">
                             <li>
-                                <div class="single-info d-flex align-items-center">
-                                    <div class="info-icon">
-                                        <i class="lni-calendar"></i>
-                                    </div>
-                                    <div class="info-text">
-                                        <p><span>Date of birth:</span> 1 Feb 2000</p>
-                                    </div>
-                                </div> <!-- single info -->
+                                <i data-lucide="calendar"></i>
+                                <div><span>Date of birth</span><strong>1 Feb 2000</strong></div>
                             </li>
                             <li>
-                                <div class="single-info d-flex align-items-center">
-                                    <div class="info-icon">
-                                        <i class="lni-envelope"></i>
-                                    </div>
-                                    <div class="info-text">
-                                        <p><span>Email:</span> mayanksingla34@gmail.com</p>
-                                    </div>
-                                </div> <!-- single info -->
+                                <i data-lucide="mail"></i>
+                                <div><span>Email</span><a href="mailto:mayanksingla34@gmail.com">mayanksingla34@gmail.com</a></div>
                             </li>
                             <li>
-                                <div class="single-info d-flex align-items-center">
-                                    <div class="info-icon">
-                                        <i class="lni-phone-handset"></i>
-                                    </div>
-                                    <div class="info-text">
-                                        <p><span>Phone:</span> +91-9464600198</p>
-                                    </div>
-                                </div> <!-- single info -->
+                                <i data-lucide="phone"></i>
+                                <div><span>Phone</span><a href="tel:+919464600198">+91 94646 00198</a></div>
                             </li>
                             <li>
-                                <div class="single-info d-flex align-items-center">
-                                    <div class="info-icon">
-                                        <i class="lni-map-marker"></i>
-                                    </div>
-                                    <div class="info-text">
-                                        <p><span>Location:</span> Patiala, Punjab</p>
-                                    </div>
-                                </div> <!-- single info -->
+                                <i data-lucide="map-pin"></i>
+                                <div><span>Location</span><strong>Patiala, Punjab</strong></div>
                             </li>
                         </ul>
-                    </div> <!-- about content -->
-                </div>
-                <div class="col-lg-5">
-                    <div class="image-cropper mt-25" style="margin-left: auto;margin-right: auto;">
-                        <img src="assets/images/Image2026.jpg" class="rounded" style="transform: scale(1.25) translateY(5px);">
-                    </div>
-                </div>
-            </div> <!-- row -->
-            <h3 class="mt-25">Languages</h3>
-            <div class="row mt-25">
-                <div class="col-sm-4">
-                    <div>
-                        <h5>English</h5>
-                        <p>Full Professional Proficiency</p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div>
-                        <h5>Hindi</h5>
-                        <p>Native or Bilingual Proficiency</p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div>
-                        <h5>Punjabi</h5>
-                        <p>Native or Bilingual Proficiency</p>
-                    </div>
-                </div>
-            </div>
-        </div> <!-- container -->
-    </section>
 
-    <!--====== ABOUT PART ENDS ======-->
-
-    <!--====== SERVICES PART START ======-->
-
-    <section id="education" class="education-area black-bg pt-125 pb-130">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title text-center pb-30">
-                        <h2 class="title">Education</h2>
-                        <p></p>
-                    </div> <!-- section title -->
-                </div>
-            </div> <!-- row -->
-            <div class="row" style="margin: auto;">
-                <div class="col-sm-4" style="padding-left: 0%;padding-right: 0.5%;">
-                    <div class="about-education pt-25">
-                        <div class="education-item mt-25">
-                            <div class="education-header">
-                                <h5 class="education-title">2016</h5>
-                                <p>10th CBSE</p>
-                            </div>
-                            <div class="education-bar">
-                                <i class="lni-plus"></i>
-                                <div class="bar-inner">
-                                    <div class="bar progress-line" data-width="100"></div>
+                        <div class="about__languages">
+                            <h4>Languages</h4>
+                            <div class="about__lang-grid">
+                                <div class="lang-card" data-tilt>
+                                    <strong>English</strong><span>Full Professional Proficiency</span>
                                 </div>
-                            </div>
-                            <div class="education-after">
-                                <h6>DAV Public School, Patiala </h6>
-                                <p>10 CGPA</p>
-                            </div>
-                        </div> <!-- education item -->
-                    </div> <!-- about education -->
-                </div>
-                <div class="col-sm-4" style="padding-left: 0%;padding-right: 0.5%;">
-                    <div class="about-education pt-25">
-                        <div class="education-item mt-25">
-                            <div class="education-header">
-                                <h5 class="education-title">2018</h5>
-                                <p>12th CBSE, Non Medical </p>
-                            </div>
-                            <div class="education-bar">
-                                <i class="lni-plus"></i>
-                                <div class="bar-inner">
-                                    <div class="bar progress-line" data-width="100"></div>
+                                <div class="lang-card" data-tilt>
+                                    <strong>Hindi</strong><span>Native / Bilingual</span>
                                 </div>
-                            </div>
-                            <div class="education-after">
-                                <h6>DAV Public School, Patiala </h6>
-                                <p>82%</p>
-                            </div>
-                        </div> <!-- education item -->
-                    </div> <!-- about education -->
-                </div>
-                <div class="col-sm-4" style="padding-left: 0%;padding-right: 0.5%;">
-                    <div class="about-education pt-25">
-                        <div class="education-item mt-25">
-                            <div class="education-header">
-                                <h5 class="education-title">2022</h5>
-                                <p>BE Computer Engineering</p>
-                            </div>
-                            <div class="education-bar">
-                                <i class="lni-plus"></i>
-                                <div class="bar-inner">
-                                    <div class="bar progress-line" data-width="100"></div>
-                                </div>
-                            </div>
-                            <div class="education-after">
-                                <h6>Thapar Institute of Engineering and
-                                    Technology, Patiala</h6>
-                                <p>7.57 CGPA</p>
-                            </div>
-                        </div> <!-- education item -->
-                    </div> <!-- about education -->
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-        <!-- <div class="container">
-            <div class="cources-content">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="section-title text-center pb-30">
-                            <h2 class="title">Courses</h2>
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-3">
-                        <div class="single-cource">
-                            <div class="cource-txt">
-                                <a href="assets/Files/UCS534-Certificate.pdf" target="_blank">Computer and Network Security</a>
-                            </div>
-                            <div class="single-cource-overlay">
-                                <div class="cource-txt">
-                                    <a href="assets/Files/UCS534-Certificate.pdf" target="_blank">Computer and Network Security</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="single-cource">
-                            <div class="cource-txt">
-                                <a href="">Secure Coding</a>
-                            </div>
-                            <div class="single-cource-overlay">
-                                <div class="cource-txt">
-                                    <a href="">Secure Codingy</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="single-cource">
-                            <div class="cource-txt">
-                                <a href="">Cyber Forensics</a>
-                            </div>
-                            <div class="single-cource-overlay">
-                                <div class="cource-txt">
-                                    <a href="">Cyber Forensics</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="single-cource cource-no-border">
-                            <div class="cource-txt">
-                                <a href="assets/Files/UCS001-Certificate.pdf" target="_blank">Introduction to Cyber Security</a>
-                            </div>
-                            <div class="single-cource-overlay">
-                                <div class="cource-txt">
-                                    <a href="assets/Files/UCS001-Certificate.pdf" target="_blank">Introduction to Cyber Security</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cource-border"></div>
-                <div class="row">
-                    <div class="col-sm-3">
-                        <div class="single-cource">
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="single-cource">
-                            <div class="cource-txt">
-                                <a href="https://www.udemy.com/certificate/UC-bdbda335-205e-4176-86fd-056c5ba9716e/" target="_blank">Ethical Hacking</a>
-                            </div>
-                            <div class="single-cource-overlay">
-                                <div class="cource-txt">
-                                    <a href="https://www.udemy.com/certificate/UC-bdbda335-205e-4176-86fd-056c5ba9716e/" target="_blank">Ethical Hacking</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="single-cource">
-                            <div class="cource-txt">
-                                <a href="https://www.udemy.com/certificate/UC-bdbda335-205e-4176-86fd-056c5ba9716e/" target="_blank">Python</a>
-                            </div>
-                            <div class="single-cource-overlay">
-                                <div class="cource-txt">
-                                    <a href="https://www.udemy.com/certificate/UC-bdbda335-205e-4176-86fd-056c5ba9716e/" target="_blank">Python</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="single-cource cource-no-border">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-    </section>
-
-    <!--====== Education PART ENDS ======-->
-
-    <!--====== WORK PART START ======-->
-
-    <section id="work" class="work-area gray-bg pt-125 pb-130">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title text-center pb-30">
-                        <h2 class="title">Work Experience</h2>
-                        <p></p>
-                    </div> <!-- section title -->
-                </div>
-            </div> <!-- row -->
-            <div>
-                <div class="pt-25 pb-30">
-                    <div class="timeline">
-                        <div class="timeline-head">
-                            <div class="timeline-head-bold">
-                                OUTPLAY | Software Developer (Full Stack)
-                            </div>
-                            <div>
-                                Mohali, Punjab | JAN 2025 - PRESENT
-                            </div>
-                        </div>
-                        <div class="timeline-body">
-                            <div>
-                                <ul style="list-style-type: disc; padding-left: 40px;">
-                                    <li>Built and managed CRM integrations with Salesforce, HubSpot, Crelate, Pipedrive, and Zapier to enable seamless data synchronization and automation.</li>
-                                    <li>Integrated WhatsApp Business API for automated messaging, customer communication and notifications.</li>
-                                    <li>Developed dialer functionalities using Twilio, Plivo, and FreJun, including call management and logging features.</li>
-                                    <li>Implemented secure authentication and authorization flows using OAuth 2.0 for third-party integrations and APIs.</li>
-                                    <li>Worked with Apache Kafka for event-driven communication and asynchronous processing across services.</li>
-                                    <li>Designed and developed customizable workflow automation modules to improve operational efficiency.</li>
-                                    <li>Managed a team by assigning tasks, conducting code reviews, and providing technical guidance and support to ensure timely and high-quality delivery.</li>
-                                    <li>Contributed to system architecture design for new features, including database schema design, service/code flow planning, and scalable backend architecture decisions.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline">
-                        <div class="timeline-head">
-                            <div class="timeline-head-bold">
-                                Smart Energy Water | Product Engineer (.NET)
-                            </div>
-                            <div>
-                                Noida, Uttar Pradesh | July 2022 - Dec 2024
-                            </div>
-                        </div>
-                        <div class="timeline-body">
-                            <div>
-                                <ul style="list-style-type: disc; padding-left: 40px;">
-                                    <li>
-                                        Engineered a high-performing RESTful ASP.NET Web API leveraging Entity Framework & LINQ, ensuring seamless data retrieval and modification.
-                                        <ul style="list-style-type: circle; padding-left: 40px;">
-                                            <li>Implemented authorization and authentication mechanisms to ensure secure access and protect sensitive data.</li>
-                                            <li>Enhanced API performance by optimizing query processes and data retrieval methods, reducing the average response time by 40% and increasing overall system efficiency by 25%.</li>
-                                            <li>Managed the transition from SQL-based stored procedures to a LINQ-based API, resulting in a 50% improvement in performance and a significant boost in query efficiency.</li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        Executed development of a billing module utilizing ReactJS, enabling payments using Card, Bank, PayPal, GPay, and ApplePay; the platform now supports over 50,000 transactions daily.
-                                        <ul style="list-style-type: circle; padding-left: 40px;">
-                                            <li>Integrated payment gateway functionalities for providers such as Chase, PayPal, SAP, and Kubra, ensuring seamless transaction processing and a superior user experience.</li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        Provided production support for Payments, AutoPay Scheduler, and IVRToPay, enhancing system availability, and promptly resolving issues and implementing enhancements.
-                                        <ul style="list-style-type: circle; padding-left: 40px;">
-                                            <li>Enhanced the performance of the Auto Pay Scheduler and Reconciliation Scheduler, reducing processing time by 40% and decreasing error rates by 30%.</li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline">
-                        <div class="timeline-head">
-                            <div class="timeline-head-bold">
-                                Smart Energy Water | Product Engineering Intern
-                            </div>
-                            <div>
-                                Noida, UP | Jan 2022 - June 2022
-                            </div>
-                        </div>
-                        <div class="timeline-body">
-                            <div>
-                                <ul style="list-style-type: disc; padding-left: 40px;">
-                                    <li>
-                                        Created 10+ customizable Smart Templates for work orders, inventory, and assets using HTML, CSS, JavaScript, jQuery, Bootstrap, and ASP .NET, incorporating drag-and-drop functionality, reducing template creation time by 30%.
-                                    </li>
-                                    <li>
-                                        Integrated w2ui for interactive grid capabilities and Highcharts,, increasing user engagement with data insights by 40%.
-                                        <ul style="list-style-type: circle; padding-left: 40px;">
-                                            <li>Enabled export options (PDF, Excel, HTML, CSV) for data grids, improving data accessibility by 25%.</li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        Implemented a  interactive map with LeafletJS, featuring marker clustering and lasso functionalities, enhancing geographical data visualization efficiency by 50%.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div> <!-- container -->
-
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title text-center pt-50 pb-30">
-                        <h2 class="title">Achievements</h2>
-                        <p></p>
-                    </div> <!-- section title -->
-                </div>
-            </div> <!-- row -->
-            <div class="row pb-30">
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-work text-center">
-                        <div class="contact-box text-center">
-                            <div class="contact-icon">
-                                <i class="lni lni-certificate"></i>
-                            </div>
-                            <div class="contact-content">
-                                <h6 class="contact-title">Excellence Award</h6>
-                                <p style="color: #000;">Smart Energy Water</p>
-                            </div>
-                        </div>
-                        <div class="work-overlay">
-                            <div class="work-content">
-                                <h3 class="work-title">Excellence Award</h3>
-                                <ul>
-                                    <li><a href="assets\Files\Excellence_Award_SEW.pdf" target="_blank"><i
-                                                class="lni-link"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div> <!-- single work -->
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                </div>
-            </div> <!-- row -->
-        </div>
-
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title text-center pt-50 pb-30">
-                        <h2 class="title">Projects</h2>
-                        <p></p>
-                    </div> <!-- section title -->
-                </div>
-            </div> <!-- row -->
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-work text-center mt-30">
-                        <h3 class="work-text">Fresco</h3>
-                        <div class="work-overlay">
-                            <div class="work-content">
-                                <h3 class="work-title">Fresco</h3>
-                                <ul>
-                                    <li><a href="https://github.com/mayanksingla34/Fresco" target="_blank"><i
-                                                class="lni-github-original"></i></a></li>
-                                    <li><a href="https://bit.ly/frescodemo" target="_blank"><i
-                                                class="lni-link"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div> <!-- single work -->
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-work text-center mt-30">
-                        <h3 class="work-text">Tax Calculator</h3>
-                        <div class="work-overlay">
-                            <div class="work-content">
-                                <h3 class="work-title">Tax Calculator</h3>
-                                <ul>
-                                    <li><a href="https://github.com/mayanksingla34/Tax_Calculator" target="_blank"><i
-                                                class="lni-github-original"></i></a></li>
-                                    <li><a href="https://mayanksingla34.github.io/Tax_Calculator/" target="_blank"><i
-                                                class="lni-link"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div> <!-- single work -->
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-work text-center mt-30">
-                        <h3 class="work-text">Ethical Hacking</h3>
-                        <div class="work-overlay">
-                            <div class="work-content">
-                                <h3 class="work-title">Ethical Hacking</h3>
-                                <ul>
-                                    <li><a href="https://github.com/mayanksingla34/Ethical-Hacking" target="_blank"><i
-                                                class="lni-github-original"></i></a></li>
-                                    <!-- <li><a href="#work"><i class="lni-link"></i></a></li> -->
-                                </ul>
-                            </div>
-                        </div>
-                    </div> <!-- single work -->
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
-
-    <!--====== WORK PART ENDS ======-->
-
-
-    <!--====== Skills PART START ======-->
-
-    <section id="skills" class="skills-area pt-125 pb-130">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title text-center">
-                        <h2 class="title">Skills</h2>
-                        <p></p>
-                    </div> <!-- section title -->
-                </div>
-            </div> <!-- row -->
-            <div class="cources-content mt-50" style="padding-top: 0px;">
-                <div class="row">
-                    <div class="col-sm-3">
-                        <div class="single-cource">
-                            <div class="cource-txt">
-                                <a href="#skills">Web Development</a>
-                            </div>
-                            <div class="single-cource-overlay">
-                                <div class="cource-txt">
-                                    <a href="#skills">Web Development</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="single-cource">
-                            <div class="cource-txt">
-                                <a href="#skills">Database Management</a>
-                            </div>
-                            <div class="single-cource-overlay">
-                                <div class="cource-txt">
-                                    <a href="#skills">Database Management</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="single-cource">
-                            <div class="cource-txt">
-                                <a href="#skills">Data Structures</a>
-                            </div>
-                            <div class="single-cource-overlay">
-                                <div class="cource-txt">
-                                    <a href="#skills">Data Structures</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="single-cource cource-no-border">
-                            <div class="cource-txt">
-                                <a href="#skills">Algorithms</a>
-                            </div>
-                            <div class="single-cource-overlay">
-                                <div class="cource-txt">
-                                    <a href="#skills">Algorithms</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cource-border"></div>
-                <div class="row">
-                    <div class="col-sm-3">
-                        <div class="single-cource">
-                            <div class="cource-txt">
-                                <a href="assets/Files/UCS534-Certificate.pdf">Computer and Network Security</a>
-                            </div>
-                            <div class="single-cource-overlay">
-                                <div class="cource-txt">
-                                    <a href="assets/Files/UCS534-Certificate.pdf">Computer and Network Security</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="single-cource">
-                            <div class="cource-txt">
-                                <a href="#skills">Secure Coding</a>
-                            </div>
-                            <div class="single-cource-overlay">
-                                <div class="cource-txt">
-                                    <a href="#skills">Secure Coding</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="single-cource">
-                            <div class="cource-txt">
-                                <a href="#skills">Cyber Forensics</a>
-                            </div>
-                            <div class="single-cource-overlay">
-                                <div class="cource-txt">
-                                    <a href="#skills">Cyber Forensics</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="single-cource cource-no-border">
-                            <div class="cource-txt">
-                                <a href="https://www.udemy.com/certificate/UC-bdbda335-205e-4176-86fd-056c5ba9716e/">Ethical
-                                    Hacking</a>
-                            </div>
-                            <div class="single-cource-overlay">
-                                <div class="cource-txt">
-                                    <a
-                                        href="https://www.udemy.com/certificate/UC-bdbda335-205e-4176-86fd-056c5ba9716e/">Ethical
-                                        Hacking</i></a>
+                                <div class="lang-card" data-tilt>
+                                    <strong>Punjabi</strong><span>Native / Bilingual</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="section-title text-center mt-75 pb-30">
-                <h2 class="title">Tools and Technologies</h3>
-                    <p></p>
-            </div> <!-- section title -->
-            <div class="row mt-25">
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div>
-                        <h5>Languages:</h5>
+        </section>
+
+        <!-- ============ EDUCATION ============ -->
+        <section id="education" class="section education">
+            <div class="container">
+                <div class="section__head reveal">
+                    <span class="section__eyebrow">02 — Education</span>
+                    <h2 class="section__title">Academic <span class="text-gold">Journey</span></h2>
+                </div>
+
+                <div class="edu-timeline">
+                    <div class="edu-card reveal" data-tilt>
+                        <div class="edu-card__year">2016</div>
+                        <div class="edu-card__body">
+                            <h3>10th — CBSE</h3>
+                            <p class="edu-card__school">DAV Public School, Patiala</p>
+                            <div class="edu-card__score"><i data-lucide="award"></i> 10.0 CGPA</div>
+                        </div>
+                    </div>
+                    <div class="edu-card reveal" data-tilt>
+                        <div class="edu-card__year">2018</div>
+                        <div class="edu-card__body">
+                            <h3>12th — CBSE (Non-Medical)</h3>
+                            <p class="edu-card__school">DAV Public School, Patiala</p>
+                            <div class="edu-card__score"><i data-lucide="award"></i> 82%</div>
+                        </div>
+                    </div>
+                    <div class="edu-card reveal" data-tilt>
+                        <div class="edu-card__year">2022</div>
+                        <div class="edu-card__body">
+                            <h3>B.E. Computer Engineering</h3>
+                            <p class="edu-card__school">Thapar Institute of Engineering &amp; Technology, Patiala</p>
+                            <div class="edu-card__score"><i data-lucide="award"></i> 7.57 CGPA</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ EXPERIENCE ============ -->
+        <section id="experience" class="section experience">
+            <div class="container">
+                <div class="section__head reveal">
+                    <span class="section__eyebrow">03 — Experience</span>
+                    <h2 class="section__title">Work <span class="text-gold">Experience</span></h2>
+                </div>
+
+                <div class="xp-timeline">
+                    <article class="xp-item reveal">
+                        <div class="xp-item__dot"></div>
+                        <div class="xp-item__card" data-tilt>
+                            <div class="xp-item__top">
+                                <div>
+                                    <h3 class="xp-item__role">Software Developer <span>(Full Stack)</span></h3>
+                                    <p class="xp-item__company">Outplay · Mohali, Punjab</p>
+                                </div>
+                                <span class="xp-item__date xp-item__date--now">Jan 2025 — Present</span>
+                            </div>
+                            <ul class="xp-item__points">
+                                <li>Built and managed CRM integrations with Salesforce, HubSpot, Crelate, Pipedrive, and Zapier to enable seamless data synchronization and automation.</li>
+                                <li>Integrated WhatsApp Business API for automated messaging, customer communication and notifications.</li>
+                                <li>Developed dialer functionalities using Twilio, Plivo, and FreJun, including call management and logging features.</li>
+                                <li>Implemented secure authentication and authorization flows using OAuth 2.0 for third-party integrations and APIs.</li>
+                                <li>Worked with Apache Kafka for event-driven communication and asynchronous processing across services.</li>
+                                <li>Designed and developed customizable workflow automation modules to improve operational efficiency.</li>
+                                <li>Managed a team by assigning tasks, conducting code reviews, and providing technical guidance and support to ensure timely and high-quality delivery.</li>
+                                <li>Contributed to system architecture design for new features, including database schema design, service/code flow planning, and scalable backend architecture decisions.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="xp-item reveal">
+                        <div class="xp-item__dot"></div>
+                        <div class="xp-item__card" data-tilt>
+                            <div class="xp-item__top">
+                                <div>
+                                    <h3 class="xp-item__role">Product Engineer <span>(.NET)</span></h3>
+                                    <p class="xp-item__company">Smart Energy Water · Noida, Uttar Pradesh</p>
+                                </div>
+                                <span class="xp-item__date">Jul 2022 — Dec 2024</span>
+                            </div>
+                            <ul class="xp-item__points">
+                                <li>Engineered a high-performing RESTful ASP.NET Web API leveraging Entity Framework &amp; LINQ, ensuring seamless data retrieval and modification.
+                                    <ul>
+                                        <li>Implemented authorization and authentication mechanisms to ensure secure access and protect sensitive data.</li>
+                                        <li>Enhanced API performance by optimizing query processes and data retrieval methods, reducing the average response time by 40% and increasing overall system efficiency by 25%.</li>
+                                        <li>Managed the transition from SQL-based stored procedures to a LINQ-based API, resulting in a 50% improvement in performance and a significant boost in query efficiency.</li>
+                                    </ul>
+                                </li>
+                                <li>Executed development of a billing module utilizing ReactJS, enabling payments using Card, Bank, PayPal, GPay, and ApplePay; the platform now supports over 50,000 transactions daily.
+                                    <ul>
+                                        <li>Integrated payment gateway functionalities for providers such as Chase, PayPal, SAP, and Kubra, ensuring seamless transaction processing and a superior user experience.</li>
+                                    </ul>
+                                </li>
+                                <li>Provided production support for Payments, AutoPay Scheduler, and IVRToPay, enhancing system availability, and promptly resolving issues and implementing enhancements.
+                                    <ul>
+                                        <li>Enhanced the performance of the Auto Pay Scheduler and Reconciliation Scheduler, reducing processing time by 40% and decreasing error rates by 30%.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="xp-item__docs">
+                                <a href="assets/Files/SEW.ai Relieving Letter - Mayank Singla.pdf" target="_blank"
+                                    rel="noopener">
+                                    <i data-lucide="file-text"></i> Relieving Letter
+                                    <i data-lucide="arrow-up-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="xp-item reveal">
+                        <div class="xp-item__dot"></div>
+                        <div class="xp-item__card" data-tilt>
+                            <div class="xp-item__top">
+                                <div>
+                                    <h3 class="xp-item__role">Product Engineering Intern <span>(.NET)</span></h3>
+                                    <p class="xp-item__company">Smart Energy Water · Noida, Uttar Pradesh</p>
+                                </div>
+                                <span class="xp-item__date">Jan 2022 — Jun 2022</span>
+                            </div>
+                            <ul class="xp-item__points">
+                                <li>Created 10+ customizable Smart Templates for work orders, inventory, and assets using HTML, CSS, JavaScript, jQuery, Bootstrap, and ASP .NET, incorporating drag-and-drop functionality, reducing template creation time by 30%.</li>
+                                <li>Integrated w2ui for interactive grid capabilities and Highcharts, increasing user engagement with data insights by 40%.
+                                    <ul>
+                                        <li>Enabled export options (PDF, Excel, HTML, CSV) for data grids, improving data accessibility by 25%.</li>
+                                    </ul>
+                                </li>
+                                <li>Implemented an interactive map with LeafletJS, featuring marker clustering and lasso functionalities, enhancing geographical data visualization efficiency by 50%</li>
+                            </ul>
+                            <div class="xp-item__docs">
+                                <a href="assets/Files/Training Certificate - Mayank Singla.pdf" target="_blank"
+                                    rel="noopener">
+                                    <i data-lucide="file-text"></i> Training Certificate
+                                    <i data-lucide="arrow-up-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Achievements -->
+                <div class="awards reveal">
+                    <div class="awards__head">
+                        <span class="awards__label">Achievements</span>
+                        <h3 class="awards__title">Awards &amp; Recognition</h3>
+                        <p class="awards__sub">Recognition earned across my career for ownership, consistency, and
+                            delivering work that makes a measurable impact.</p>
+                    </div>
+                    <div class="award-grid">
+                        <a href="assets/Files/Employee_of_the_Quarter_Outplay_2025.pdf" target="_blank" rel="noopener"
+                            class="award-card" data-tilt
+                            aria-label="Employee of the Quarter, Outplay — view certificate">
+                            <div class="award-card__icon"><i data-lucide="star"></i></div>
+                            <div class="award-card__body">
+                                <h4>Employee of the Quarter</h4>
+                                <p>Outplay</p>
+                            </div>
+                            <span class="award-card__cta">View Certificate <i data-lucide="arrow-up-right"></i></span>
+                        </a>
+                        <a href="assets/Files/Excellence_Award_SEW_May_2023.pdf" target="_blank" rel="noopener"
+                            class="award-card" data-tilt aria-label="Award of Excellence, Smart Energy Water — view certificate">
+                            <div class="award-card__icon"><i data-lucide="trophy"></i></div>
+                            <div class="award-card__body">
+                                <h4>Award of Excellence</h4>
+                                <p>Smart Energy Water</p>
+                            </div>
+                            <span class="award-card__cta">View Certificate <i data-lucide="arrow-up-right"></i></span>
+                        </a>
+                        <a href="assets/Files/Excellence_Award_SEW_Jul_Dec_2023.pdf" target="_blank" rel="noopener"
+                            class="award-card" data-tilt aria-label="Award of Excellence, Smart Energy Water — view certificate">
+                            <div class="award-card__icon"><i data-lucide="trophy"></i></div>
+                            <div class="award-card__body">
+                                <h4>Award of Excellence</h4>
+                                <p>Smart Energy Water</p>
+                            </div>
+                            <span class="award-card__cta">View Certificate <i data-lucide="arrow-up-right"></i></span>
+                        </a>
+                        <a href="assets/Files/Excellence_Award_SEW_Jan_Jun_2024.pdf" target="_blank" rel="noopener"
+                            class="award-card" data-tilt aria-label="Award of Excellence, Smart Energy Water — view certificate">
+                            <div class="award-card__icon"><i data-lucide="trophy"></i></div>
+                            <div class="award-card__body">
+                                <h4>Award of Excellence</h4>
+                                <p>Smart Energy Water</p>
+                            </div>
+                            <span class="award-card__cta">View Certificate <i data-lucide="arrow-up-right"></i></span>
+                        </a>
+                        <a href="assets/Files/Excellence_Award_SEW_2023_24.pdf" target="_blank" rel="noopener"
+                            class="award-card award-card--annual" data-tilt
+                            aria-label="Award of Excellence, Smart Energy Water — view certificate">
+                            <div class="award-card__icon"><i data-lucide="medal"></i></div>
+                            <div class="award-card__body">
+                                <h4>Award of Excellence</h4>
+                                <p>Smart Energy Water</p>
+                            </div>
+                            <span class="award-card__cta">View Certificate <i data-lucide="arrow-up-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ PROJECTS ============ -->
+        <section id="projects" class="section projects">
+            <div class="container">
+                <div class="section__head reveal">
+                    <span class="section__eyebrow">04 — Projects</span>
+                    <h2 class="section__title">Selected <span class="text-gold">Projects</span></h2>
+                </div>
+
+                <div class="project-grid">
+                    <article class="project-card reveal" data-tilt>
+                        <div class="project-card__num">01</div>
+                        <h3 class="project-card__title">Fresco</h3>
+                        <p class="project-card__desc">A web application project showcasing front-end and full-stack
+                            development with a live deployed demo.</p>
+                        <div class="project-card__tags">
+                            <span>Web</span><span>Full-Stack</span>
+                        </div>
+                        <div class="project-card__links">
+                            <a href="https://github.com/mayanksingla34/Fresco" target="_blank" rel="noopener">
+                                <span class="brand" data-brand="github"></span> Code
+                            </a>
+                            <a href="https://bit.ly/frescodemo" target="_blank" rel="noopener" class="is-primary">
+                                <i data-lucide="external-link"></i> Live Demo
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" data-tilt>
+                        <div class="project-card__num">02</div>
+                        <h3 class="project-card__title">Tax Calculator</h3>
+                        <p class="project-card__desc">A clean, responsive tax computation tool — deployed and live on
+                            GitHub Pages.</p>
+                        <div class="project-card__tags">
+                            <span>JavaScript</span><span>UI</span>
+                        </div>
+                        <div class="project-card__links">
+                            <a href="https://github.com/mayanksingla34/Tax_Calculator" target="_blank" rel="noopener">
+                                <span class="brand" data-brand="github"></span> Code
+                            </a>
+                            <a href="https://mayanksingla34.github.io/Tax_Calculator/" target="_blank" rel="noopener" class="is-primary">
+                                <i data-lucide="external-link"></i> Live
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" data-tilt>
+                        <div class="project-card__num">03</div>
+                        <h3 class="project-card__title">Ethical Hacking</h3>
+                        <p class="project-card__desc">A collection of offensive-security tooling and scripts exploring
+                            exploitation techniques and network attacks.</p>
+                        <div class="project-card__tags">
+                            <span>Security</span><span>Python</span>
+                        </div>
+                        <div class="project-card__links">
+                            <a href="https://github.com/mayanksingla34/Ethical-Hacking" target="_blank" rel="noopener">
+                                <span class="brand" data-brand="github"></span> Code
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ SKILLS ============ -->
+        <section id="skills" class="section skills">
+            <div class="container">
+                <div class="section__head reveal">
+                    <span class="section__eyebrow">05 — Skills</span>
+                    <h2 class="section__title">Skills &amp; <span class="text-gold">Expertise</span></h2>
+                </div>
+
+                <div class="skills__marquee reveal" aria-label="Skill domains">
+                    <div class="skills__marquee-track">
+                        <div class="skills__marquee-group">
+                            <span class="chip">Full-Stack Development</span>
+                            <span class="chip">Web Development</span>
+                            <span class="chip">REST APIs</span>
+                            <span class="chip">System Architecture</span>
+                            <span class="chip">Microservices</span>
+                            <span class="chip">API Integration</span>
+                            <span class="chip">Database Management</span>
+                            <span class="chip">Data Structures</span>
+                            <span class="chip">Algorithms</span>
+                            <span class="chip">Computer &amp; Network Security</span>
+                            <span class="chip">Secure Coding</span>
+                            <span class="chip">Cyber Forensics</span>
+                            <span class="chip">Ethical Hacking</span>
+                        </div>
+                        <div class="skills__marquee-group" aria-hidden="true">
+                            <span class="chip">Full-Stack Development</span>
+                            <span class="chip">Web Development</span>
+                            <span class="chip">REST APIs</span>
+                            <span class="chip">System Architecture</span>
+                            <span class="chip">Microservices</span>
+                            <span class="chip">API Integration</span>
+                            <span class="chip">Database Management</span>
+                            <span class="chip">Data Structures</span>
+                            <span class="chip">Algorithms</span>
+                            <span class="chip">Computer &amp; Network Security</span>
+                            <span class="chip">Secure Coding</span>
+                            <span class="chip">Cyber Forensics</span>
+                            <span class="chip">Ethical Hacking</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills__grid">
+                    <div class="skill-cat reveal" data-tilt>
+                        <div class="skill-cat__head"><i data-lucide="terminal"></i><h3>Languages</h3></div>
                         <p>C#, C/C++, Java, Python</p>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div>
-                        <h5>Web:</h5>
-                        <p>ASP.NET, HTML, CSS, JavaScript, NodeJS</p>
+                    <div class="skill-cat reveal" data-tilt>
+                        <div class="skill-cat__head"><i data-lucide="globe"></i><h3>Web</h3></div>
+                        <p>ASP.NET Core, ASP.NET, HTML, CSS, JavaScript, Node.js</p>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div>
-                        <h5>Databases:</h5>
-                        <p>MSSQL, LINQ, SQL, MongoDB</p>
-
+                    <div class="skill-cat reveal" data-tilt>
+                        <div class="skill-cat__head"><i data-lucide="database"></i><h3>Databases</h3></div>
+                        <p>MSSQL, PostgreSQL, LINQ, SQL, MongoDB</p>
                     </div>
-                </div>
-            </div>
-            <div class="row mt-25">
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div>
-                        <h5>Frameworks/Libraries:</h5>
-                        <p>Entity Framework, Express, Bootstrap, jQuery, W2UI</p>
+                    <div class="skill-cat reveal" data-tilt>
+                        <div class="skill-cat__head"><i data-lucide="boxes"></i><h3>Frameworks / Libraries</h3></div>
+                        <p>Entity Framework, React, Angular, Express, Bootstrap, jQuery, W2UI, Highcharts, LeafletJS</p>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div>
-                        <h5>Tools:</h5>
-                        <p>Azure DevOps, Git, Linux, Visual Studio, Visual Studio Code, MS Power
-                            Automate, NetBeans</p>
+                    <div class="skill-cat reveal" data-tilt>
+                        <div class="skill-cat__head"><i data-lucide="wrench"></i><h3>Tools</h3></div>
+                        <p>Azure DevOps, Git, Linux, Visual Studio, VS Code, Postman, Jira, Jenkins, Kafka, Redis, MS Power Automate, NetBeans</p>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div>
-                        <h5>Security:</h5>
-                        <p>Buffer Overflow, Shell Shock, PE Code Injection, MITM, ARP Spoofing,
-                            DNS Spoofing, XSS, SQL Injection, Metasploit</p>
+                    <div class="skill-cat reveal" data-tilt>
+                        <div class="skill-cat__head"><i data-lucide="shield"></i><h3>Security</h3></div>
+                        <p>Buffer Overflow, Shell Shock, PE Code Injection, MITM, ARP/DNS Spoofing, XSS, SQL Injection, Metasploit</p>
+                    </div>
+                    <div class="skill-cat reveal" data-tilt>
+                        <div class="skill-cat__head"><i data-lucide="webhook"></i><h3>Integrations &amp; APIs</h3></div>
+                        <p>REST APIs, OAuth 2.0, Salesforce, HubSpot, Pipedrive, Zapier, Twilio, Plivo, WhatsApp Business API, Payment Gateways</p>
+                    </div>
+                    <div class="skill-cat reveal" data-tilt>
+                        <div class="skill-cat__head"><i data-lucide="network"></i><h3>Architecture &amp; Concepts</h3></div>
+                        <p>Microservices, Event-Driven Architecture, System Design, Database Schema Design, Workflow Automation, CI/CD, Agile</p>
                     </div>
                 </div>
             </div>
-        </div> <!-- container -->
-    </section>
+        </section>
 
-    <!--====== BLOG PART ENDS ======-->
-
-    <!--====== CONTACT PART START ======-->
-
-    <section id="contact" class="contact-area pt-125 pb-75 gray-bg">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title text-center pb-25">
-                        <h2 class="title">Get In Touch</h2>
-                        <p></p>
-                    </div> <!-- section title -->
-                </div>
-            </div> <!-- row -->
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6 col-sm-7">
-                    <div class="contact-box text-center mt-30">
-                        <div class="contact-icon">
-                            <i class="lni-map-marker"></i>
-                        </div>
-                        <div class="contact-content">
-                            <h6 class="contact-title">Address</h6>
-                            <p style="color: #000;">Patiala, Punjab</p>
-                            <!-- <p style="color: #000;">198 Phulkian Enclave, Patiala, Punjab</p> -->
-                        </div>
-                    </div> <!-- contact box -->
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-7">
-                    <div class="contact-box text-center mt-30">
-                        <div class="contact-icon">
-                            <i class="lni-phone"></i>
-                        </div>
-                        <div class="contact-content">
-                            <h6 class="contact-title">Phone</h6>
-                            <p style="color: #000;">+91-9464600198</p>
-                            <!-- <p style="color: #000;">0175-5200198</p> -->
-                        </div>
-                    </div> <!-- contact box -->
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-7">
-                    <div class="contact-box text-center mt-30">
-                        <div class="contact-icon">
-                            <i class="lni-envelope"></i>
-                        </div>
-                        <div class="contact-content">
-                            <h6 class="contact-title">Email</h6>
-                            <p style="color: #000;">mayanksingla34@gmail.com</p>
-                            <!-- <p style="color: #000;">msingla_be18@thapar.edu</p> -->
-                        </div>
-                    </div> <!-- contact box -->
-                </div>
-            </div> <!-- row -->
-            <div class="row justify-content-center pt-25">
-                <div class="footer-content text-center">
-                    <p class="mt-"></p>
-                    <ul>
-                        <li><a href="https://www.linkedin.com/in/mayanksingla34/" target="_blank"><i
-                                    class="lni-linkedin-original"></i></a></li>
-                        <li><a href="https://github.com/mayanksingla34" target="_blank"><i
-                                    class="lni-github-original"></i></a></li>
-                        <li><a href="https://www.facebook.com/mayanksingla34/" target="_blank"><i
-                                    class="lni-facebook-filled"></i></a></li>
-                        <li><a href="https://www.instagram.com/mayanksingla34/" target="_blank"><i
-                                    class="lni-instagram-filled"></i></a></li>
-                        <li><a href="https://twitter.com/mayanksingla34" target="_blank"><i
-                                    class="lni-twitter-original"></i></a></li>
-                        <li><a href="https://join.skype.com/invite/V9I3NgY5rS3O" target="_blank"><i
-                                    class="lni-skype"></i></a></li>
-                    </ul>
-                </div> <!-- footer content -->
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
-
-    <!--====== CONTACT PART ENDS ======-->
-
-    <!--====== FOOTER PART START ======-->
-
-    <footer id="footer" class="footer-area">
-        <div class="footer-copyright pb-20">
+        <!-- ============ CONTACT ============ -->
+        <section id="contact" class="section contact">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="copyright-text text-center pt-20">
-                            <p>© Mayank Singla</p>
-                        </div> <!-- copyright text -->
-                    </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div> <!-- footer widget -->
+                <div class="section__head reveal">
+                    <span class="section__eyebrow">06 — Contact</span>
+                    <h2 class="section__title">Get In <span class="text-gold">Touch</span></h2>
+                    <p class="section__lead">Have an opportunity or just want to say hi? My inbox is always open.</p>
+                </div>
+
+                <div class="contact__grid">
+                    <a href="https://maps.google.com/?q=Patiala,Punjab" target="_blank" rel="noopener"
+                        class="contact-card reveal" data-tilt>
+                        <div class="contact-card__icon"><i data-lucide="map-pin"></i></div>
+                        <h3>Location</h3>
+                        <p>Patiala, Punjab</p>
+                    </a>
+                    <a href="tel:+919464600198" class="contact-card reveal" data-tilt>
+                        <div class="contact-card__icon"><i data-lucide="phone"></i></div>
+                        <h3>Phone</h3>
+                        <p>+91 94646 00198</p>
+                    </a>
+                    <a href="mailto:mayanksingla34@gmail.com" class="contact-card reveal" data-tilt>
+                        <div class="contact-card__icon"><i data-lucide="mail"></i></div>
+                        <h3>Email</h3>
+                        <p>mayanksingla34@gmail.com</p>
+                    </a>
+                </div>
+
+                <ul class="contact__social reveal">
+                    <li><a href="https://www.linkedin.com/in/mayanksingla34/" target="_blank" rel="noopener"
+                            aria-label="LinkedIn"><span class="brand" data-brand="linkedin"></span></a></li>
+                    <li><a href="https://github.com/mayanksingla34" target="_blank" rel="noopener"
+                            aria-label="GitHub"><span class="brand" data-brand="github"></span></a></li>
+                    <li><a href="https://www.instagram.com/mayanksingla34/" target="_blank" rel="noopener"
+                            aria-label="Instagram"><span class="brand" data-brand="instagram"></span></a></li>
+                    <li><a href="https://twitter.com/mayanksingla34" target="_blank" rel="noopener"
+                            aria-label="Twitter / X"><span class="brand" data-brand="twitter"></span></a></li>
+                    <li><a href="https://www.facebook.com/mayanksingla34/" target="_blank" rel="noopener"
+                            aria-label="Facebook"><span class="brand" data-brand="facebook"></span></a></li>
+                    <!-- <li><a href="https://join.skype.com/invite/V9I3NgY5rS3O" target="_blank" rel="noopener"
+                            aria-label="Skype"><span class="brand" data-brand="skype"></span></a></li> -->
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <a href="#home" class="footer__brand">Mayank <span class="text-gold">Singla</span></a>
+            <p class="footer__copy">© <span id="year"></span> Mayank Singla. Crafted with precision.</p>
+            <nav class="footer__links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </footer>
 
-    <!--====== FOOTER PART ENDS ======-->
+    <!-- ============ BACK TO TOP ============ -->
+    <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i data-lucide="arrow-up"></i>
+    </a>
 
-    <!--====== BACK TOP TOP PART START ======-->
-
-    <a href="#" class="back-to-top"><i class="lni-chevron-up"></i></a>
-
-    <!--====== BACK TOP TOP PART ENDS ======-->
-
-
-
-
-
-
-
-    <!--====== jquery js ======-->
-    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
-    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
-
-    <!--====== Bootstrap js ======-->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-
-    <!--====== Magnific Popup js ======-->
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-
-    <!--====== Parallax js ======-->
-    <script src="assets/js/parallax.min.js"></script>
-
-    <!--====== Counter Up js ======-->
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-
-
-    <!--====== Appear js ======-->
-    <script src="assets/js/jquery.appear.min.js"></script>
-
-    <!--====== Scrolling js ======-->
-    <script src="assets/js/scrolling-nav.js"></script>
-    <script src="assets/js/jquery.easing.min.js"></script>
-
-
-    <!--====== Main js ======-->
-    <script src="assets/js/main.js"></script>
-
+    <script src="assets/js/portfolio.js" defer></script>
 </body>
 
 </html>
